@@ -54,7 +54,7 @@
                                                 
                                                 <p><?php echo  $shop->description ;?></p>
                                                 <br>
-                                                <p>Alamat: {{ $shop->address }}</p>
+                                                <!-- <p>Alamat: {{ $shop->address }}</p> -->
                                                 @if($shop->days->count())
                                                     @if($shop->working_hours->currentOpenRange(now()))
                                                         <p>Shop is open and will close at {{ $shop->working_hours->currentOpenRange(now())->end() }}.</p>
