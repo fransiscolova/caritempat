@@ -2,7 +2,7 @@
     <div class="container">
         <div class="site-logo-wrap">
             <hgroup>
-                <h1 style ="align:center" class='site-title site-title-no-desc'> <a  style="color:#FFFFFF;" href='{{ route('home') }}' title='CariTempat' rel='home'>CariTempat</a></h1>
+                <h1 style ="align:center" class='site-title site-title-no-desc'> <a  style="color:#FFFFFF;" href='{{ route('home') }}' title='CariTempat' rel='home'>Cari Tempat</a></h1>
             </hgroup>
         </div>
         <nav id="primary-nav" class="primary-nav" role="navigation">
