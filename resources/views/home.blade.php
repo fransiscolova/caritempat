@@ -89,7 +89,7 @@
 @section('scripts')<!-- 
 <script type='text/javascript' src='https://maps.google.com/maps/api/js?language=en&key={{ env('GOOGLE_MAPS_API_KEY') }}&libraries=places&region=GB'></script> -->
 <!-- <script src="/js/mapInput.js"></script> -->
-<script type='text/javascript' src='https://maps.google.com/maps/api/js?language=en&key=AIzaSyAp8pJH-SJZwtlJUjoj-xJripfDtl_0EW0&libraries=places&region=ID'></script>
+<script type='text/javascript' src='https://maps.google.com/maps/api/js?language=en&key=AIzaSyCo-Z_E-_Pjs18SWum2YjrWQpGssFC0kbs&libraries=places&region=ID'></script>
 <script defer>
      
 
@@ -104,7 +104,7 @@
             zoomControlOptions: {
                 style:google.maps.ZoomControlStyle.DEFAULT
             },
-            center:  queryString.includes("search") ? new google.maps.LatLng({{ $latitude }}, {{ $longitude }}) :  {lat: -6.9034443, lng: 107.5731168},
+            center:  queryString.includes("search") ? new google.maps.LatLng({{ $latitude }}, {{ $longitude }}) :  {lat: -6.2295712, lng: 106.7594779},
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             scrollwheel: false,
             panControl:false,

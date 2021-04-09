@@ -138,7 +138,7 @@
 
 @section('scripts')
 <script src="/js/mapInput.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAp8pJH-SJZwtlJUjoj-xJripfDtl_0EW0&libraries=places&callback=initialize&language=en&region=ID" async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo-Z_E-_Pjs18SWum2YjrWQpGssFC0kbs&libraries=places&callback=initialize&language=en&region=ID" async defer></script>
 
 <script>
     var uploadedPhotosMap = {}

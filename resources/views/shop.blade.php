@@ -172,7 +172,7 @@ $(function(){
         function initialize() {
             var latLng = new google.maps.LatLng({{ $shop->latitude }}, {{ $shop->longitude }});
             var mapOptions = {
-                zoom: 20,
+                zoom: 13,
                 minZoom: 6,
                 maxZoom: 17,
                 zoomControl:true,
