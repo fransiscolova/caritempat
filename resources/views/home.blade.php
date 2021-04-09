@@ -110,7 +110,7 @@
 
        const queryString = window.location.search;
         var mapOptions = {
-            zoom: 14,
+            zoom: 6,
             minZoom: 6,
             maxZoom: 17,
             zoomControl:true,
