@@ -166,7 +166,7 @@ $(function(){
 });
 </script>
 @if($shop->latitude && $shop->longitude)
-  <script src="/js/mapInput.js"></script>
+  <!-- <script src="/js/mapInput.js"></script> -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo-Z_E-_Pjs18SWum2YjrWQpGssFC0kbs&libraries=places&callback=initialize&language=en&region=ID" async defer></script>
     <script defer>
         function initialize() {
