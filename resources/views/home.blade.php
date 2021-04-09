@@ -91,9 +91,22 @@
 <!-- <script src="/js/mapInput.js"></script> -->
 <script type='text/javascript' src='https://maps.google.com/maps/api/js?language=en&key=AIzaSyCo-Z_E-_Pjs18SWum2YjrWQpGssFC0kbs&libraries=places&region=ID'></script>
 <script defer>
-     
+    var la ='';
+    var lt ='';
+    navigator.geolocation.getCurrentPosition(showPosition);
 
-	function initialize() {
+   function showPosition(position) {
+    try {
+     la =position.coords.latitude;
+     lt =position.coords.longitude;
+     initialize(la,lt);
+        }
+        catch(err) {
+           console.log(err.message);
+    }
+   }
+     
+	function initialize(lati,langi) {
 
        const queryString = window.location.search;
         var mapOptions = {
@@ -104,7 +117,7 @@
             zoomControlOptions: {
                 style:google.maps.ZoomControlStyle.DEFAULT
             },
-            center:  queryString.includes("search") ? new google.maps.LatLng({{ $latitude }}, {{ $longitude }}) :  {lat: -6.2295712, lng: 106.7594779},
+            center:  queryString.includes("search") ? new google.maps.LatLng({{ $latitude }}, {{ $longitude }}) :  {lat:lati, lng: langi},
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             scrollwheel: false,
             panControl:false,
@@ -142,7 +155,7 @@
 	}
 
 
-	google.maps.event.addDomListener(window, 'load', initialize);
+	google.maps.event.addDomListener(window, 'load', showPosition);
 
     function generateContent(place)
     {
