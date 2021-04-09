@@ -142,7 +142,7 @@
 
 @section('scripts')
 <script src="/js/mapInput.js"></script>
-<script type='text/javascript' src='https://maps.google.com/maps/api/js?language=en&key=AIzaSyCo-Z_E-_Pjs18SWum2YjrWQpGssFC0kbs&libraries=places&region=ID'></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo-Z_E-_Pjs18SWum2YjrWQpGssFC0kbs&libraries=places&callback=initialize&language=en&region=ID" async defer></script>
 <script>
     var uploadedPhotosMap = {}
 Dropzone.options.photosDropzone = {
