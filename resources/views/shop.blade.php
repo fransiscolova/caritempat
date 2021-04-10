@@ -66,13 +66,15 @@
                                                 @endif
                                                 <p></p>
                                             </div>
+                                            <p></p>
+                                            <p></p>
                                             @if($shop->latitude && $shop->longitude)
                                         <!-- <li id="post_mapTab" style="display: none;"> -->
                                             <div id="map-canvas" style="height: 425px; width: 100%; position: relative; overflow: hidden;">
                                             </div>
                                         <!-- </li> -->
                                     @endif
-                                            
+
                                         </div>
                                     </li>
 
