@@ -66,8 +66,17 @@
                                                 @endif
                                                 <p></p>
                                             </div>
+                                            @if($shop->latitude && $shop->longitude)
+                                        <li id="post_mapTab" style="display: none;">
+                                            <div id="map-canvas" style="height: 425px; width: 100%; position: relative; overflow: hidden;">
+                                            </div>
+                                        </li>
+                                    @endif
+                                            
                                         </div>
                                     </li>
+
+
                                     @if($shop->photos->count())
                                         <li id="post_imagesTab" style="display: none;"><span id="post_images"></span>
                                             <div id="geodir-tab-content-post_images" class="hash-offset"></div>
