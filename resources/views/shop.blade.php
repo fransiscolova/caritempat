@@ -37,9 +37,9 @@
                                     @if($shop->photos->count())
                                         <dd class=""><a data-tab="#post_images" data-status="enable"><i class="fas fa-image" aria-hidden="true"></i>Photos</a></dd><dt></dt>
                                     @endif
-                                    @if($shop->latitude && $shop->longitude)
+<!--                                     @if($shop->latitude && $shop->longitude)
                                         <dd class=""><a data-tab="#post_map" data-status="enable"><i class="fas fa-globe-americas" aria-hidden="true"></i>Map</a></dd><dt></dt>
-                                    @endif
+                                    @endif -->
                                     @if($shop->days->count())
                                         <dd class=""><a data-tab="#working_hours" data-status="enable"><i class="fas fa-clock" aria-hidden="true"></i>Working Hours</a></dd>
                                     @endif
@@ -70,7 +70,7 @@
                                             <p></p>
                                             @if($shop->latitude && $shop->longitude)
                                         <!-- <li id="post_mapTab" style="display: none;"> -->
-                                            <div id="map-canvas" style="height: 425px; width: 100%; position: relative; overflow: hidden;">
+                                            <div id="map-canvas" style="height: 200; width: 100%; position: relative; overflow: hidden;">
                                             </div>
                                         <!-- </li> -->
                                     @endif
@@ -97,12 +97,12 @@
                                             </div>
                                         </li>
                                     @endif
-                                    @if($shop->latitude && $shop->longitude)
+<!--                                     @if($shop->latitude && $shop->longitude)
                                         <li id="post_mapTab" style="display: none;">
                                             <div id="map-canvas" style="height: 425px; width: 100%; position: relative; overflow: hidden;">
                                             </div>
                                         </li>
-                                    @endif
+                                    @endif -->
                                     @if($shop->days->count())
                                         <li id="working_hoursTab" style="display: none;">
                                             @foreach($shop->days as $day)
