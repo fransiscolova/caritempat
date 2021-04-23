@@ -43,7 +43,7 @@
     <div id="ds-container">
         @include('partials.header')
 
-        @includeWhen(request()->is('/'), 'partials.map')
+        <!-- @includeWhen(request()->is('/'), 'partials.map') -->
 
         @yield('content')
 
