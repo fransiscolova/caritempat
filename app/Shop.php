@@ -101,7 +101,7 @@ class Shop extends Model implements HasMedia
             })
             ->when(request()->filled('category'), function($query) {
                 $query->whereHas('categories', function($query) {
-                    $query->where('id', request()->input('category')->orderBy('id', 'DESC'));
+                    $query->where('id', request()->input('category'))->orderBy('id', 'DESC');
                 });
             });
     }
