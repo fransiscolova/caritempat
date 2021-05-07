@@ -97,11 +97,11 @@ class Shop extends Model implements HasMedia
                     $query->where('name', 'ILIKE', '%'.$search.'%')
                         ->orWhere('description', 'ILIKE', '%'.$search.'%')
                         ->orWhere('address', 'ILIKE', '%'.$search.'%');
-                });
+                })->orderBy('id', 'DESC');
             })
             ->when(request()->filled('category'), function($query) {
                 $query->whereHas('categories', function($query) {
-                    $query->where('id', request()->input('category'));
+                    $query->where('id', request()->input('category')->orderBy('id', 'DESC'));
                 });
             });
     }
